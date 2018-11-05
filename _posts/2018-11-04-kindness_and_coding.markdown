@@ -1,7 +1,7 @@
 ---
 layout: post
-title:      "****Kindness and Coding     "
-date:       2018-11-05 00:24:41 +0000
+title:      "Kindness and Coding     "
+date:       2018-11-04 19:24:42 -0500
 permalink:  kindness_and_coding
 ---
 
