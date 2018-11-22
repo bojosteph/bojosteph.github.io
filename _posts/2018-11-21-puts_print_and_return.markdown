@@ -1,30 +1,14 @@
 ---
 layout: post
 title:      " Puts, Print and Return"
-date:       2018-11-22 01:19:38 +0000
+date:       2018-11-21 20:19:39 -0500
 permalink:  puts_print_and_return
 ---
 
 
 
 
-<!-- HTML Codes by Quackit.com -->
 
-<title>Text Example</title>
-<style>
-div.container {
-background-color: #ffffff;
-}
-div.container p {
-font-family: Arial;
-font-size: 14px;
-font-style: normal;
-font-weight: normal;
-text-decoration: none;
-text-transform: none;
-color: #000000;
-background-color: #ffffff;
-}
 </style>
 
 <div class="container">
