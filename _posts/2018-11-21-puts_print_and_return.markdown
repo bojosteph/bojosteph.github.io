@@ -5,13 +5,14 @@ date:       2018-11-21 20:19:39 -0500
 permalink:  puts_print_and_return
 ---
 
+                  
 
 
 
 
-</style>
 
-<div class="container">
+
+
 <p>both puts and print output to the console but return nil values</p>
 <p> the difference between print and puts is that puts  add a newline character</p>
 <p></p>
