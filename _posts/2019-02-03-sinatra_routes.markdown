@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Sinatra Routes"
-date:       2019-02-03 19:59:59 +0000
+date:       2019-02-03 14:59:59 -0500
 permalink:  sinatra_routes
 ---
 
@@ -10,7 +10,7 @@ permalink:  sinatra_routes
 
 
 
-Sinatra is a domain specific language a lightweight version of Rails that is available to use as a Ruby Gem to create Web Applications. A good simple example to is output “Hello World” to the local Browser .
+Sinatra is a domain specific language a lightweight version of Rails that is available to use as a Ruby Gem to create Web Applications. A good simple example  is to output “Hello World” to the local Browser .
 
 
 To use
