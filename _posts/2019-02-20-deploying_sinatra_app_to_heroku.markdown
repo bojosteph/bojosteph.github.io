@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Deploying Sinatra App to Heroku"
-date:       2019-02-21 00:50:09 +0000
+date:       2019-02-20 19:50:09 -0500
 permalink:  deploying_sinatra_app_to_heroku
 ---
 
@@ -14,7 +14,8 @@ Heroku is a Cloud platform as a service (PaaS). Anyway it's a popular cloud plat
 <p>
 When you are developing your app on a  local environment and start to deploy it on Heroku and your app is not Production Ready , I found out you will have a lot of things that will not work as planned. 
 </p>
-First Install Heroku CLI toolbelt in your system if you have linux or Mac its a lot easier than windows .<p> you can brew install or snap install depending on your system.</p>
+First Install Heroku CLI toolbelt in your system if you have linux or Mac its a lot easier than windows .
+<p> you can brew install or snap install depending on your system.</p>
 <br>
 Create  a Heroku Account and  do heroku login in your system
 <br>
