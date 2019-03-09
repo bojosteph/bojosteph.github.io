@@ -207,28 +207,9 @@ Styling you Web App using Bootstrap helps with media query to make sure your app
 There is plenty of guide in styling your forms , input and use of buttons .
 
 <p>Using HTML  input attributes in your form will help with  user side validation adding to your server side validation with less code . 
-Example form below  . Add required on each field and the browser will alert the user of missing field and will not submit the form until its filled out .
+.If You Add required on each field , the browser will alert the user of missing field and will not submit the form until its filled out .
 
 
-
-```
-<div class="container">
- <h1 style="padding-top: 10px; padding-bottom: 10px;">Log In</h1>
-
-<form  action="/login" method="POST">
-   <div class="form-group">
-     <label for="username">Username</label>
-     <input type="text" class="form-control" id="username" name="username" required placeholder="Enter username">
-   </div>
-   <div class="form-group">
-     <label for="password">Password</label>
-     <input type="text" class="form-control" id="password" name="password" required placeholder="Enter password">
-   </div>
-   <button type="submit" class="btn btn-primary btn-lg btn-block">Log In</button>
-
-</form>
-</div>
-```
 
 
 
