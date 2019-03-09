@@ -78,14 +78,17 @@ end
 
 
   
-<code>
-<p>event.rb</p>
-<p>class Event < ActiveRecord::Base</p>
-<p> validates_presence_of :name, :date, :location, :description</p>
- <p>belongs_to :user</p>
-<p> has_many : rsvp_events</p>
-<p>end</p>
-</code>
+
+```
+event.rb
+
+class Event < ActiveRecord::Base
+  validates_presence_of :name, :date, :location, :description
+  belongs_to :user
+  has_many : rsvp_events
+end
+```
+
 
 <code>
 rsvp_event.rb
