@@ -10,9 +10,7 @@ permalink:  sinatra_event_app_my_sinatra_portfolio_project
 
 
 
-<br>
-<br>
-<iframe class="embed-responsive-item"id="ytplayer" type="text/html"   width="560" height="315" src="https://www.youtube.com/embed/yL4nFGtLwX0?&autoplay=1&loop=1&rel=0&showinfo=0&color=white&iv_load_policy=3&playlist=yL4nFGtLwX0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 
 
 <br>
@@ -204,103 +202,7 @@ end
 Time to Set Up The Views . I started with layout.erb that will be my template with navbar and index.html.erb that will welcome user and has log in and create acccount 
 
 <p>  I put a lot of work on the layout using  bootsrap 4 and then adding a navbar with ruby code to set up different nav set up if the user is  logged or not logged in .
-<p>Check out my layour.erb 
 
-
-
-
-
-```
-layout.erb 
-
-
-
-
-<body>
-
- <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-   <a class="navbar-brand" href="/">Sinatra Event App</a>
-   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navBarNavDropdown"
-     aria-expanded="false" aria-label="Toggle navigation">
-     <span class="navbar-toggler-icon"></span>
-   </button>
-   <div class="collapse navbar-collapse" id="navbarNavDropdown">
-     <ul class="navbar-nav">
-       <% if logged_in? %>
-       <li class="nav-item active">
-         <a class="nav-link" href="/events">Upcoming Events</a>
-       </li>
-       <li class="nav-item">
-         <a class="nav-link" href="/events/new">Create Events</a>
-       </li>
-       <li class="nav-item">
-         <a class="nav-link" href="/logout">Log Out</a>
-       </li>
-```
-
-```
-```
-```
-
-      ```
- ```
-<li class="nav-item dropdown">
-         <div class="btn-group">
-           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
-             aria-haspopup="true" aria-expanded="false">
-             Dropdown link
-           </a>
-           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-             <a class="dropdown-item" href="#">Action</a>
-             <a class="dropdown-item" href="/events">Upcoming Events</a>
-             <a class="dropdown-item" href="/events/new">Create Events</a>
-             <% @user = current_user %>
-             <a class="dropdown-item" href="/users/<%= @user.id %>">Your Events</a>
-             <div class="dropdown-divider"></div>
-             <a class="dropdown-item" href="/rsvp_events">Events You Rsvp</a>
-             <a class="dropdown-item" href="/logout">Log Out</a>
-           </div>
-         </div>
-       </li>
-```
-```
-
-      ```
- ```
-<% end %>
-       <% if !logged_in? %>
-       <li class="nav-item">
-         <a class="nav-link" href="/login">Log In</a>
-       </li>
-       <li class="nav-item">
-         <a class="nav-link" href="/signup">Sign Up</a>
-       </li>
-       <% end %>
-     </ul>
-   </div>
-
- </nav>
-```
-```
-
-
-```
-
- ```
-<%= styled_flash%>
- <%= yield %>
-```
-```
-
-
-
- 
-```
-```
-</body>
-
-</html>
-```
 
 The rest of my view will be able to use layout.erb  because of yield making it easier to focus on the body of each page . 
 
