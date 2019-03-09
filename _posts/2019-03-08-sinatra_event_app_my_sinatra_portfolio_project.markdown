@@ -22,10 +22,11 @@ Using The Lesson I learned from Building My CLI project and The CRUD application
 <a href="https://sinatra-event-app.herokuapp.com">sinatra-event-app</a>
 </p>
   
-<br>
+</br>
 
-<p>The purpose of this Project is to Learn How to Build a Working Web App Using Sinatra That will  perform CRUD application using a database that will store  data from user input .  Using ruby I can get information from the database and present it to the user . I have to use the MVC pattern to organize my code and adhere to current practice for web application.</p> <p> I want to use Active Record to get data from DB and use  migration to set  up my database and schema</p>
-<br>
+<p>The purpose of this Project is to Learn How to Build a Working Web App Using Sinatra That will  perform CRUD application using a database that will store  data from user input .  Using ruby I can get information from the database and present it to the user . I have to use the MVC pattern to organize my code and adhere to current practice for web application. I want to use Active Record to get data from DB and use  migration to set  up my database and schema</p>
+
+</br>
 
 <p> I have decided to build a web app that will handle events like a mini event manager app .</p>
 <p> <strong>User</p>
