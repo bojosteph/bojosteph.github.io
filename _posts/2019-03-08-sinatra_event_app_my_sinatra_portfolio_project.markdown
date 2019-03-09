@@ -13,9 +13,8 @@ permalink:  sinatra_event_app_my_sinatra_portfolio_project
 
 
 
-<br>
 
-<br/>
+
 Building Sinatra Event App
 
 Using The Lesson I learned from Building My CLI project and The CRUD application Lesson and Example from One of Our Flatiron Instructor I am able to Build My Sinatra Project called sinatra-event-app
@@ -23,10 +22,10 @@ Using The Lesson I learned from Building My CLI project and The CRUD application
 https://sinatra-event-app.herokuapp.com
 </p>
   
-<br>
-<br>
+<br/>
+<br/>
 
-<p>The purpose of this Project is to Learn How to Build a Working Web App Using Sinatra That will  perform CRUD application using a database that will store  data from user input .  Using ruby I can get information from the database and present it to the user . I have to use the MVC pattern to organize my code and adhere to current practice for web application .<p> I want to use Active Record to get data from DB and use  migration to set  up my database and schema</p>
+<p>The purpose of this Project is to Learn How to Build a Working Web App Using Sinatra That will  perform CRUD application using a database that will store  data from user input .  Using ruby I can get information from the database and present it to the user . I have to use the MVC pattern to organize my code and adhere to current practice for web application</p> .<p> I want to use Active Record to get data from DB and use  migration to set  up my database and schema</p>
 <br>
 
 <p> I have decided to build a web app that will handle events like a mini event manager app .</p>
@@ -49,10 +48,9 @@ https://sinatra-event-app.herokuapp.com
 <p>   Using Corneal I am able to generate my project structure . </p>
 Using this gem made it easier to get started.
 <p>You can gem install corneal  and use `corneal new name-of-app` to set up your file .</p>
-<p> I Have experienced Issue with sqlite1.4 so I have to change my gemfile to sqlite 1.3.13 before running bundle install 
+<p> I Have experienced Issue with sqlite1.4 so I have to change my gemfile to sqlite 1.3.13 before running bundle install </p>
 <br>
-I want to see my model associations before I start going into details of how to set up views and controllers.<p> I want to see how I can access data from my database . I planned on using tux first to achieve this  . Tux is a ruby gem you can use that will let you use your terminal to create objects and access database to plan and see if everything will work before you go deep in your programming.
-<br>
+I want to see my model associations before I start going into details of how to set up views and controllers.<p> I want to see how I can access data from my database . I planned on using tux first to achieve this  . Tux is a ruby gem you can use that will let you use your terminal to create objects and access database to plan and see if everything will work before you go deep in your programming.</p>
 
 
 
@@ -61,44 +59,39 @@ I want to see my model associations before I start going into details of how to 
 
 I created my models first 
 my user class 
+```
 user.rb 
 
-```
 class User < ActiveRecord::Base
         has_secure_password
         validates_presence_of :username, :email, :password, :full_name
          has_many :events
         has_many :rsvp_events
         end
-```
+
   
-```
+
 event.rb
 class Event < ActiveRecord::Base
  validates_presence_of :name, :date, :location, :description
  belongs_to :user
  has_many : rsvp_events
 end
-```
-```
 
-```
-```
 rsvp_event.rb
 
 class RsvpEvent < ActiveRecord::Base
  belongs_to :event
  belongs_to :user
-End
-```
+end
+
 ```
 
 
 
-```
 Using rake-T I was  able to see list of available commands  and I am  able to run my migration . In the end my schema looks like this 
-```
 
+```
 
 ActiveRecord::Schema.define(version:) do
 
@@ -131,32 +124,29 @@ end
 
 ```
 
+
 After I got this set Up I can run 
-```
+
 
 rake db:migrate 
 
 rake db:seed
 
 
-```
 
-After Playing in the terminal with Tux and got my associations working . I have a better understanding of how to set up my routes and views so  its time to set up my controller and views . 
-```
+
+<p>After Playing in the terminal with Tux and got my associations working . I have a better understanding of how to set up my routes and views so  its time to set up my controller and views . </p>
+
 
  
 
 
 
-```
 For my Controllers . The rest of the controllers will inherit from application controller . 
 
  Apllication Controllers : This will inherit from Sinatra::Base middleware , set up sessions secret and Sinatra flash , I will also put my helpers method here to help with user authentication 
-```
 
-```
-<br>
-<br>
+
 ```
 require './config/environment'
 
@@ -184,20 +174,14 @@ class ApplicationController < Sinatra::Base
  end
 end
 ```
-```
 
-
-
-
-```
 <p>  I Have  3 other controllers
 <p>  UsersControllers this will define Restful routes relevant to the user
 <p>  EventsControllers this will define Restful routes relevant to an Event
 <p>  RsvpEventsControllers this will define Restful routes relevant to an Rsvp event.
-```
 
 
-```
+
 
 Time to Set Up The Views . I started with layout.erb that will be my template with navbar and index.html.erb that will welcome user and has log in and create acccount 
 
@@ -225,14 +209,12 @@ There is plenty of guide in styling your forms , input and use of buttons .
 <p>Using HTML  input attributes in your form will help with  user side validation adding to your server side validation with less code . 
 Example form below  . Add required on each field and the browser will alert the user of missing field and will not submit the form until its filled out .
 
+
+
 ```
 <div class="container">
  <h1 style="padding-top: 10px; padding-bottom: 10px;">Log In</h1>
-```
 
- ```
-```
-```
 <form  action="/login" method="POST">
    <div class="form-group">
      <label for="username">Username</label>
@@ -243,16 +225,12 @@ Example form below  . Add required on each field and the browser will alert the 
      <input type="text" class="form-control" id="password" name="password" required placeholder="Enter password">
    </div>
    <button type="submit" class="btn btn-primary btn-lg btn-block">Log In</button>
-```
-```
 
- ```
-```
 </form>
 </div>
 ```
-```
-```
+
+
 
 Working with Sinatra Gave Me a better understanding of How things work in the background and Where to look for issues .
 
