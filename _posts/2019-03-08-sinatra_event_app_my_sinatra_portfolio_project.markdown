@@ -12,8 +12,7 @@ permalink:  sinatra_event_app_my_sinatra_portfolio_project
 
 <br>
 <br>
-
-
+<iframe class="embed-responsive-item"id="ytplayer" type="text/html"   width="560" height="315" src="https://www.youtube.com/embed/yL4nFGtLwX0?&autoplay=1&loop=1&rel=0&showinfo=0&color=white&iv_load_policy=3&playlist=yL4nFGtLwX0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 <br>
@@ -367,9 +366,7 @@ Check out my repo  in github
 <p> Thanks and Happy Coding !
 
 
-  <iframe class="embed-responsive-item"id="ytplayer" type="text/html"   width="560" height="315" src="https://www.youtube.com/embed/yL4nFGtLwX0?&autoplay=1&loop=1&rel=0&showinfo=0&color=white&iv_load_policy=3&playlist=yL4nFGtLwX0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-
+ 
  
 
 
