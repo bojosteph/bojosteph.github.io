@@ -28,26 +28,37 @@ Using The Lesson I learned from Building My CLI project and The CRUD application
   
 
 
-<p>The purpose of this Project is to Learn How to Build a Working Web App Using Sinatra That will  perform CRUD application using a database that will store  data from user input .  Using ruby I can get information from the database and present it to the user . I have to use the MVC pattern to organize my code and adhere to current practice for web application. I want to use Active Record to get data from DB and use  migration to set  up my database and schema</p>
+<p>The purpose of this Project is to Learn How to Build a Working Web App Using Sinatra That will  perform CRUD application using a database that will store  data from user input .  Using ruby I can get information from the database and present it to the User . I have to use the MVC pattern to organize my code and adhere to current practice for web application. I want to use Active Record to get data from DB and use  migration to set  up my database and schema</p>
 
 
 
 <p> I have decided to build a web app that will handle events like a mini event manager app .</p>
-<p> <strong>User
-<p>1.  User can be an Event Creator or an Event Participant via RSVP</p>
- <p>  .  A user is required to Sign-Up or Log-In to Access Account</p>
- <br>
- <p>2. As An Event Creator a User Should be able :</p>
-    <p> .View all Events </p>
- <p>    .Create an Event</p>
-<p>     . Update and Delete Event</p>
-  <p>   .View User Own Event </p>
-  <p>   .View Participants to Own Event</p>
- <p>    .Cancel RSVP event </p>
- 
-   <p>  3. As an RSVP participant a User Should Be able:</p>
-   <p>  .View all the events the user rsvp’d</p>
-  <p>    .Cancel rsvp for event the user sign-up on</p></strong>
+
+ <strong>User
+ <ul>
+ <li>User can be an Event Creator </li>
+<li>User can be Event Participant via RSVP</li>
+<li> A user is required to Sign-Up or Log-In to Access Account</li>
+</ul>
+<br>
+User as Event Creator Should Be
+
+   <ul>
+	 <li> View all Events </li>
+ <li>    Create an Event</li>
+<li>      Update and Delete Event</li>
+  <li>   View User Own Event </li>
+  <li>   View Participants to Own Event</li>
+ <li>    Cancel RSVP event </li>
+ </ul>
+ </br>
+   <p>  As an RSVP participant a User Should Be able:</p>
+	 <ul>
+   <li>  View all the events the user rsvp’d</li>
+  <li>    Cancel rsvp for event the user sign-up on</li>
+	</ul>
+	</strong>
+	
 
 <p>   Using Corneal I am able to generate my project structure . </p>
 Using this gem made it easier to get started.
