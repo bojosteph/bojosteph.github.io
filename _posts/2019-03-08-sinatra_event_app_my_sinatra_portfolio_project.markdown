@@ -19,7 +19,7 @@ Building Sinatra Event App
 
 Using The Lesson I learned from Building My CLI project and The CRUD application Lesson and Example from One of Our Flatiron Instructor I am able to Build My Sinatra Project called sinatra-event-app
 <p>
-https://sinatra-event-app.herokuapp.com
+<a href="https://sinatra-event-app.herokuapp.com">sinatra-event-app</a>
 </p>
   
 <br>
@@ -172,7 +172,7 @@ Also Check out This Helpful Guide about deploying Your Sinatra app to Heroku
  I included a link below 
  
  
-[]http://github.com/DakotaLMartinez/sinatra-heroku-demo.git)
+<a href="http://github.com/DakotaLMartinez/sinatra-heroku-demo.git">git hub sinatra-heroku-demo</a>
 
 
 Styling you Web App using Bootstrap helps with media query to make sure your app will have a consistent look in different device and will collapse and line up so user can still view your view  in smaller device .
@@ -189,7 +189,7 @@ Working with Sinatra Gave Me a better understanding of How things work in the ba
 
 Check out my repo  in github
 
-[]https://github.com/bojosteph/sinatra-event-app.git)
+<a href="https://github.com/bojosteph/sinatra-event-app.git">github sinatra-event-app</a>
 
 <p><sttrong>Things to improve in the future 
 <p> User can search events
