@@ -63,7 +63,7 @@ Using this gem made it easier to get started.
 
 I created my models first 
 
-my user class 
+my user class  has may events and rsvp_events, then I have my event class   that belongs to user and has many rsvp partcipants/events  and rsvp_event class  belongs to both user and events
 
 ```
 user.rb 
@@ -106,19 +106,21 @@ end
 Using rake-T I was  able to see list of available commands  and I am  able to run my migration . In the end my schema looks like this 
 
 
-<code>
-<p>ActiveRecord::Schema.define(version:) do</p>
 
-<p> create_table "events", force: :cascade do |t|</p>
- <p>  t.string   "name"</p>
- <p>  t.string   "date"</p>
-<p>   t.string   "location"</p>
-<p>   t.string   "description"</p>
- <p>  t.datetime "created_at",  null: false</p>
-<p>   t.datetime "updated_at",  null: false</p>
- <p>  t.integer  "user_id"</p>
-<p> end</p>
- </code>
+```
+ActiveRecord::Schema.define(version:) do
+
+ create_table "events", force: :cascade do |t|
+   t.string   "name"
+   t.string   "date
+   t.string   "location"
+   t.string   "description"
+   t.datetime "created_at",  null: false
+   t.datetime "updated_at",  null: false
+   t.integer  "user_id"
+ end
+```
+ 
  
 <code>
 <p> create_table "rsvp_events", force: :cascade do |t|</p>
