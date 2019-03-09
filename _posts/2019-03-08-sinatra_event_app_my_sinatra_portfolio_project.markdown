@@ -90,14 +90,16 @@ end
 ```
 
 
-<code>
+
+```
 rsvp_event.rb
 
-<p>class RsvpEvent < ActiveRecord::Base</p>
- <p>belongs_to :event</p>
- <p>belongs_to :user</p>
-<p>end</p>
-</code>
+class RsvpEvent < ActiveRecord::Base
+  belongs_to :event
+  belongs_to :user
+end
+```
+
 
 
 
