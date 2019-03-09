@@ -8,7 +8,7 @@ permalink:  sinatra_event_app_my_sinatra_portfolio_project
 
 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/yL4nFGtLwX0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/yL4nFGtLwX0?&autoplay=1&loop=1&rel=0&showinfo=0&color=white&iv_load_policy=3&playlist=yL4nFGtLwX0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
  
 
 
