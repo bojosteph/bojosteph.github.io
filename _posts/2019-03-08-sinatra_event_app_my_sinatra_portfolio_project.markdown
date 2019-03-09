@@ -22,14 +22,13 @@ Using The Lesson I learned from Building My CLI project and The CRUD application
 https://sinatra-event-app.herokuapp.com
 </p>
   
-<br/>
-<br/>
+<br>
 
 <p>The purpose of this Project is to Learn How to Build a Working Web App Using Sinatra That will  perform CRUD application using a database that will store  data from user input .  Using ruby I can get information from the database and present it to the user . I have to use the MVC pattern to organize my code and adhere to current practice for web application</p> .<p> I want to use Active Record to get data from DB and use  migration to set  up my database and schema</p>
 <br>
 
 <p> I have decided to build a web app that will handle events like a mini event manager app .</p>
-<p> <strong>User
+<p> <strong>User</p>
 <p>1.  User can be an Event Creator or an Event Participant via RSVP</p>
  <p>  .  A user is required to Sign-Up or Log-In to Access Account</p>
  <br>
@@ -147,33 +146,6 @@ For my Controllers . The rest of the controllers will inherit from application c
  Apllication Controllers : This will inherit from Sinatra::Base middleware , set up sessions secret and Sinatra flash , I will also put my helpers method here to help with user authentication 
 
 
-```
-require './config/environment'
-
-class ApplicationController < Sinatra::Base
- configure do
-   set :public_folder, 'public'
-   set :views, 'app/views'
-   register Sinatra::Flash
-   enable :sessions
-   set :session_secret, ENV.fetch('SESSION_SECRET')
- end
-
- get '/' do
-   erb :"/index.html"
- end
-
- helpers do
-   def current_user
-     session[:user_id] && User.find_by(id: session[:user_id])
-   end
-
-   def logged_in?
-     !!current_user
-   end
- end
-end
-```
 
 <p>  I Have  3 other controllers
 <p>  UsersControllers this will define Restful routes relevant to the user
