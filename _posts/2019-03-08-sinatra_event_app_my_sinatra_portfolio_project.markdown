@@ -26,11 +26,11 @@ Using The Lesson I learned from Building My CLI project and The CRUD application
 <a href="https://sinatra-event-app.herokuapp.com">sinatra-event-app</a>
 </p>
   
-</br>
+
 
 <p>The purpose of this Project is to Learn How to Build a Working Web App Using Sinatra That will  perform CRUD application using a database that will store  data from user input .  Using ruby I can get information from the database and present it to the user . I have to use the MVC pattern to organize my code and adhere to current practice for web application. I want to use Active Record to get data from DB and use  migration to set  up my database and schema</p>
 
-</br>
+
 
 <p> I have decided to build a web app that will handle events like a mini event manager app .</p>
 <p> <strong>User</p>
@@ -44,16 +44,16 @@ Using The Lesson I learned from Building My CLI project and The CRUD application
   <p>   .View User Own Event </p>
   <p>   .View Participants to Own Event</p>
  <p>    .Cancel RSVP event </p>
- <br>
+ 
    <p>  3. As an RSVP participant a User Should Be able:</p>
    <p>  .View all the events the user rsvp’d</p>
   <p>    .Cancel rsvp for event the user sign-up on</p></strong>
- <br>
+
 <p>   Using Corneal I am able to generate my project structure . </p>
 Using this gem made it easier to get started.
 <p>You can gem install corneal  and use `corneal new name-of-app` to set up your file .</p>
 <p> I Have experienced Issue with sqlite1.4 so I have to change my gemfile to sqlite 1.3.13 before running bundle install </p>
-<br>
+
 <p>I want to see my model associations before I start going into details of how to set up views and controllers.</p> I want to see how I can access data from my database . I planned on using tux first to achieve this  . Tux is a ruby gem you can use that will let you use your terminal to create objects and access database to plan and see if everything will work before you go deep in your programming.</p>
 
 
@@ -64,17 +64,18 @@ Using this gem made it easier to get started.
 I created my models first 
 
 my user class 
-<code>
 
-<p>user.rb </p>
+```
+user.rb 
 
-<p>class User < ActiveRecord::Base</p>
-      <p>  has_secure_password</p>
-       <p> validates_presence_of :username, :email, :password, :full_name</p>
-       <p>  has_many :events</p>
-      <p>  has_many :rsvp_events</p>
-      <p>  end</p>
-	</code>
+class User < ActiveRecord::Base
+  has_secure_password
+  validates_presence_of :username, :email, :password, :full_name
+  has_many :events
+  has_many :rsvp_events
+end
+```
+
 
   
 <code>
