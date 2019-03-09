@@ -121,24 +121,27 @@ ActiveRecord::Schema.define(version:) do
  end
 ```
  
- 
-<code>
-<p> create_table "rsvp_events", force: :cascade do |t|</p>
-<p>   t.integer "event_id"</p>
-<p>   t.integer "user_id"</p>
-<p> end</p>
- </code>
+```
 
-<code>
- <p>create_table "users", force: :cascade do |t|</p>
-  <p> t.string   "username"</p>
- <p>t.string   "email"</p>
- <p> t.string   "password_digest"</p>
- <p> t.datetime "created_at",      null: false</p>
-  <p> t.datetime "updated_at",      null: false</p>
- <p>  t.string   "full_name"</p>
-<p> end</p>
-</code>
+ create_table "rsvp_events", force: :cascade do |t|
+   t.integer "event_id"
+   t.integer "user_id"
+ end
+```
+ 
+
+
+```
+ create_table "users", force: :cascade do |t|
+  t.string   "username"
+  t.string   "email"
+  t.string   "password_digest"
+  t.datetime "created_at",      null: false
+  t.datetime "updated_at",      null: false
+  t.string   "full_name"
+ end
+```
+
 
 
 
