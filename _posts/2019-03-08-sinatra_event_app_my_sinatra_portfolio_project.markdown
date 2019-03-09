@@ -33,7 +33,7 @@ Using The Lesson I learned from Building My CLI project and The CRUD application
 
 
 <p> I have decided to build a web app that will handle events like a mini event manager app .</p>
-<p> <strong>User</p>
+<p> <strong>User
 <p>1.  User can be an Event Creator or an Event Participant via RSVP</p>
  <p>  .  A user is required to Sign-Up or Log-In to Access Account</p>
  <br>
