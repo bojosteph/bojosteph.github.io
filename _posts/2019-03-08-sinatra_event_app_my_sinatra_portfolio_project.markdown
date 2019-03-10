@@ -37,7 +37,7 @@ User
 <li>A user is required to Sign-Up or Log-In to Access Account</li>
 </ul>
 <br>
-User as Event Creator Should Be
+User as Event Creator Should Be able to 
 <ul>
 <li>View all Events</li>
 <li>Create an Event</li>
@@ -47,7 +47,7 @@ User as Event Creator Should Be
 <li>Cancel RSVP event</li>
 </ul>
 <br>
-As an RSVP participant a User Should Be able
+As an RSVP participant a User Should Be able to
 <ul>
 <li>View all the events the user rsvp’d</li>
 <li>Cancel rsvp for event the user sign-up on</li>
@@ -129,7 +129,7 @@ create_table "users", force: :cascade do |t|
 ```
 
 <br>
-After I got this set Up I can run
+After  I got this set Up I can run
 
 `rake db:migrate `  and `rake db:seed`
 
@@ -156,7 +156,7 @@ Time to Set Up The Views . I started with layout.erb that will be my template wi
 
 <p>I put a lot of work on the layout using bootsrap 4 and then adding a navbar with ruby code to set up different nav set up if the user is logged or not logged in . This way the User can access different navigation control if logged in and if not logged in will have limited nav set up. This will also Help with better User experience .</p>
 <p>The rest of my view will be able to use layout.erb because of yield making it easier to focus on the body of each page .</p>
-<p>I have learned alot with this project but I also enjoyed the building process once I got things working and have my plan in place. In the end we all want to learn and be good at being a web developer so embrace the journey</p>
+<p>I have learned a lot with this project but I also enjoyed the building process once I got things working and have my plan in place . In the end I  want to learn and become a better web developer. So  I am embracing this  journey</p>
 
 <p>I also encountered a lot of issues with my local environment set up which is frustrating with windows set up . But once I set up Virtualbox and start using Vscode and Ubuntu I will never go back . There is a guide in learn about setting up your Local environment using virtual Machine for Windows and set up for Mac user .</p>
 
