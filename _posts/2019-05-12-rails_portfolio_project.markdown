@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Rails Portfolio Project"
-date:       2019-05-13 03:28:25 +0000
+date:       2019-05-12 23:28:26 -0400
 permalink:  rails_portfolio_project
 ---
 
@@ -14,7 +14,7 @@ permalink:  rails_portfolio_project
 <br>
 
 <br>
-https://rails-event-app.herokuapp.com/
+    <a href="https://rails-event-app.herokuapp.com/" >RAILS EVENT APP </a>
 <br>
 
 <br>
@@ -142,5 +142,5 @@ below is a link to my github
 
 <br>
 
-https://github.com/bojosteph/rails-project-event-app.git
+<a href="https://github.com/bojosteph/rails-project-event-app.git">github rails-event-app</a>
 
