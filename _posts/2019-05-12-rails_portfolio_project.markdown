@@ -20,7 +20,7 @@ permalink:  rails_portfolio_project
 <br>
 My Portfolio project for Rails is Rails-Event-App . 
 <br>
-This Project is an extension of my sinatra project . I  started  using my own  controller and views  to Sign up. Sign in and Authenticate my user and then added  omniauth gem  to let user signin using facebook but later switched to devise  so I can be familiar with this popular gem for user authentication and sign up and sign in .The devise gem has very good ducumentaion and have a lot of resources . I have to add this code to add strong params with .my user model for my extra params like  user name  
+This Project is an extension of my sinatra project . I  started  using my own  controller and views  to Sign up. Sign in and Authenticate my user and then added  omniauth gem  to let user signin using facebook but later switched to devise  so I can be familiar with this popular gem for user authentication and sign up and sign in .The devise gem has very good ducumentation  and have a lot of resources . I have to add this code to add strong params with .my user model for my extra params like  user name  
 <br>
 
 ```
@@ -37,8 +37,8 @@ end
 
 
 My application has an Event model a User model ,  a join model of RsvpEvents and Reviews . I also have a Category model . 
-My user class Has 3 different  types planner, participant and reviewer to make it easy to associate a user with the task .
-I have to add a foreign key to my joint model using the different user type . this  is an example of my model and database ..On my event table I have the planner_id, on my rsvp_event i have the participant id and on my review class i have my reviewer_id 
+My user class Has 3 different  types :  planner, participant and reviewer to make it easy to associate a user with the task .
+I have to add a foreign key to my joint model using the different user type . this  is an example of my model and database ..On my event table I have the planner_id, on my rsvp_event I have the participant id and on my review class i have my reviewer_id 
 
 ```
 Events table 
@@ -88,7 +88,7 @@ After setting my classes and associations I  started  working on my routes and m
 I started nesting events under user but later changed it so I don't  have to use user id on my controllers and views .
 I have nested  rsvp_events and reviews under events .
 
-I have to add model validation for overlapping events and have to use scope method to prevent a user to create an event if  it overlaps to the user own event . other user can create event at the same time becuase its not overlapping thier events  . I tried different query methods but the following code worked the best 
+I have to add model validation for overlapping events and have to use scope method to prevent a user to create an event if  it overlaps to the user own event .but will allow other user  to create an  event at the same time becuase its not overlapping their  events  . I tried different query methods but the following code worked the best 
 
 ```
 scope :overlapping, lambda { |start_date, end_date|
@@ -111,7 +111,7 @@ scope :overlapping, lambda { |start_date, end_date|
   end
 ```
 
-That was the hardest to work on but it did the trick for me . I added it to my Event Validation to prevent creating an event so I don't  have to put that in my controller and I can prolpt he user for the error before creating the event .
+That was the hardest to work on but it did the trick for me . I added it to my Event Validation to prevent creating an event so I don't  have to put a lot of logic on my  my controller and I can prompt  the user for the error before creating the event .
 
 ```
 class Event < ApplicationRecord
@@ -122,11 +122,11 @@ validate :date_must_be_current, if: :has_date_range?
 ```
 
 
-By validating on create  only . I can still edit my event . if I just put validate It will also affect me editing the particular event .
+By validating on create  only . I can still edit my event . if I just put validate It will also affect  editing the particular event .
 
 A user as planner can create an event . as a participant a user  can rsvp to an event and as a reviewer a user  can review an event 
 
-I have added logic on my buttons on the  show page to allow a user to rsvp but the other button is not accessible until the user  rsvp . I have to guard on some null or nill  values on my views and i find out using  .blank? Work better than nil? Or empty? 
+I have added some methods  on my buttons on the  show page to allow a user to rsvp but the other button is not accessible until the user  rsvp like edit , cancel rsvp  and review  the event  . I have to guard on some null or nill  values on my views and i find out using  .blank? Work better than nil? Or empty? 
 
 ```
 <% unless @rsvp_event.blank? %>
