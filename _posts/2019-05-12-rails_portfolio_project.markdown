@@ -20,7 +20,8 @@ permalink:  rails_portfolio_project
 <br>
 My Portfolio project for Rails is Rails-Event-App . 
 <br>
-This Project is an extension of my sinatra project . I  started  using my own  controller and views  to Sign up. Sign in and Authenticate my user and then added  omniauth gem  to let user signin using facebook but later switched to devise  so I can be familiar with this popular gem for user authentication and sign up and sign in .The devise gem has very good ducumentaion and have a lot of resources . I have to add this code to add strong params with .my user model for my extra params like  user name  </p>
+This Project is an extension of my sinatra project . I  started  using my own  controller and views  to Sign up. Sign in and Authenticate my user and then added  omniauth gem  to let user signin using facebook but later switched to devise  so I can be familiar with this popular gem for user authentication and sign up and sign in .The devise gem has very good ducumentaion and have a lot of resources . I have to add this code to add strong params with .my user model for my extra params like  user name  
+<br>
 
 ```
 class ApplicationController < ActionController::Base
